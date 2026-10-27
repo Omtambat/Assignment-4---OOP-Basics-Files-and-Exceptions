@@ -1,0 +1,10 @@
+A4 E1 Written Answers
+1. Why do we make an attribute private with two underscores instead of leaving it public?
+We make an attribute private using two underscores to prevent direct access from outside the class. This helps protect the data from being changed incorrectly. We can use methods like set_marks() and get_marks() to control how the data is changed or accessed.
+2. Why is a CSV file often more useful than a plain text file for this kind of data?
+A CSV file stores data in rows and columns, which makes it easier to organize student information. It can be opened and processed easily using spreadsheet programs and Python's csv module. It is more structured than a simple text file when working with multiple records.
+3. What does JSON give you that CSV does not?
+JSON can store structured data using objects, keys, and values, so it can represent more complex information. It can also store lists and nested data easily. CSV is mainly designed for simple rows and columns, while JSON is more flexible for different types of data.
+4. Why put anything in a finally block at all, when the code after the try would run anyway?
+A finally block is used for code that must run whether an error occurs or not. It is especially useful for cleanup tasks such as closing files or releasing resources. Code after the try block may not run if an exception is not handled, but the finally block still runs.
+
